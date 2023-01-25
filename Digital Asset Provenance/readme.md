@@ -1,12 +1,14 @@
 # Digital Asset Provenance 
-The script uses a hash of an image, including non-visual information, and uploading the image and its metadata to prove authenticity of a digital asset is called Digital Asset Provenance.
+The script uses a hash of an image, including non-visual information, and uploading the image and its metadata to prove authenticity of a digital asset also referred to as Digital Asset Provenance.
+
 It is a method of tracking and validating the ownership and authenticity of digital assets such as images, videos, audio, and documents.
 It typically involves creating a unique digital fingerprint or hash of the asset, and storing it on a decentralized, tamper-proof ledger such as a blockchain. This allows for the asset's ownership and authenticity to be verified at any point in its lifecycle.
+
 Digital Asset Provenance can be used in various industries such as art, music, film, and photography to protect the rights of creators and owners.
 It can also be used in other industries where digital assets are important such as in supply chain management and logistics to track the authenticity and origin of goods.
 
 ## Script Details
-The purpose of this script is to create a hash of an image, including non-visual information, and uploading the image and its metadata to IPFS to prove the authenticity of the image. This process is known as Digital Asset Provenance.
+The purpose of this script is to create a hash of an image, including non-visual information, and uploading the image and its metadata to IPFS to prove the authenticity of the image.
 
 By creating a unique digital fingerprint, or hash, of the image, and storing it on a decentralized, tamper-proof ledger, it allows for the image's authenticity to be verified at any point in its lifecycle. This is particularly useful in industries such as art, photography, and media, where the authenticity and ownership of digital assets are important.
 
@@ -25,6 +27,7 @@ The use of a cryptographic hash function like SHA-256 ensures that the hash is s
 
 ## Non Visual Info
 Adding non-visual information: Explain how the script creates a JSON file containing non-visual information (such as the last save time) and how it includes this information in the final hash.
+
 The script creates a JSON file containing non-visual information (such as the last save time) by creating an object with the required information, then use the JSON.stringify() method to convert the object into a string. This JSON string can contain any kind of non-visual information related to the image, such as the last save time, the original creator, location taken, etc.
 
 The script then uses the crypto library to create a hash of this JSON file, in the same way, it creates a hash of the image file.
