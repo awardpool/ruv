@@ -1,4 +1,4 @@
-  // 	    Token Gating ERC20
+  // 	    Digital Asset Provenance for web3
   //      AWARD POOL - Create Amazing
   //        /\__/\   - js by @rUv
   //       ( o.o  )  - v1.0.0
