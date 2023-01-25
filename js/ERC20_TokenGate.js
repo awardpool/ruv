@@ -57,13 +57,15 @@ const threshold = 1;
 //new check 
 if(contractAddress !== ""){
     // Call the balanceOf function
-    contract.methods.balanceOf(userAddress).call().then(function(balance) {
-        if(balance > threshold){
-            console.log(`The user's balance is greater than : ${threshold}  ${balance}`);
-        }else{
-            console.log(`The user's balance is less or equal to : ${threshold}  ${balance}`);
-        }
-    });
+contract.methods.balanceOf(userAddress).call().then(function(balance) {
+    const balanceInEther = web3.utils.fromWei(balance, 'ether');
+    if(balanceInEther > threshold) {
+        console.log(`The user's balance is greater than : ${threshold}  ${balanceInEther} ETH`);
+    }else{
+        console.log(`The user's balance is less or equal to : ${threshold}  ${balanceInEther} ETH`);
+    }
+});
+
 } else {
     web3.eth.getBalance(userAddress).then(function(balance) {
         const ether = web3.utils.fromWei(balance, 'ether');
