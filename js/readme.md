@@ -1,4 +1,4 @@
-# Token Gating with Metamask
+# Token Gating Javascript for Metamask / web3.js
 
 ## Intro
 Token gating is a way for projects to limit access to certain benefits based on who holds an NFT or has a certain amount of traditional fungible tokens. These tokens, either NFTs or traditional fungible tokens, serve as proof of ownership and are shown via a crypto wallet such as MetaMask. To gain access to token gated benefits, you typically need to connect or sign a message with your crypto wallet, proving ownership of a certain NFT or a certain amount of traditional fungible tokens. Once you complete this step, it’s easy to claim whatever benefit is being offered.
