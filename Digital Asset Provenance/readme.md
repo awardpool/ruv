@@ -26,8 +26,6 @@ This hashing process is important for ensuring the authenticity of the image. Th
 The use of a cryptographic hash function like SHA-256 ensures that the hash is secure, and it's not possible to reverse engineer the image from the hash, making it difficult for anyone to tamper with the image and its authenticity information.
 
 ## Non Visual Info
-Adding non-visual information: Explain how the script creates a JSON file containing non-visual information (such as the last save time) and how it includes this information in the final hash.
-
 The script creates a JSON file containing non-visual information (such as the last save time) by creating an object with the required information, then use the JSON.stringify() method to convert the object into a string. This JSON string can contain any kind of non-visual information related to the image, such as the last save time, the original creator, location taken, etc.
 
 The script then uses the crypto library to create a hash of this JSON file, in the same way, it creates a hash of the image file.
