@@ -10,4 +10,4 @@ Cloudflare Workers is a serverless platform for running JavaScript code on Cloud
 // -H 'X-Auth-Email: <cloudflare_user>' \
 // -H 'X-Auth-Key: <key>' \
 // -d '{ "user": "user", "password": "password123", "secret": "supersecret" }' \ 
-// https://example.com/encrypt
+// https://auth.ruv.workers.dev
