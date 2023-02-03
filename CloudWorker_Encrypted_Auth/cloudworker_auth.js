@@ -60,9 +60,9 @@ async function handleRequest(request) {
   let password = url.searchParams.get("password");
   let secret = url.searchParams.get("secret");
   const deleteKey = url.searchParams.get("delete");
-  const accountId = "272d4270396295921a521f9b416d183e";
-  const namespaceId = "85d9439314e64570a77471f707c17db4";
-  const apiKey = "57f1e44256e2079ea4c86e8b7485bdfab1c8f";
+  const accountId = "<account_id>";
+  const namespaceId = "<namespaceId>";
+  const apiKey = "<apiKey>";
   let response;
 
   // Ensure that user is not null or empty
@@ -78,7 +78,7 @@ async function handleRequest(request) {
       method: 'PUT',
       headers: {
         'Content-Type': 'text/plain',
-        'X-Auth-Email': 'ruv@ruv.net',
+        'X-Auth-Email': '<email>',
         'X-Auth-Key': apiKey
       },
       body: encryptedPassword
@@ -88,7 +88,7 @@ async function handleRequest(request) {
       method: 'DELETE',
       headers: {
         'Content-Type': 'text/plain',
-        'X-Auth-Email': 'ruv@ruv.net',
+        'X-Auth-Email': '<email>',
         'X-Auth-Key': apiKey
       }
     });
