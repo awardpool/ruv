@@ -56,7 +56,6 @@ Request Body (JSON):
 
 ### Response Body (JSON):
 
-````
 ```
 (
 {
@@ -84,4 +83,3 @@ Request Body (JSON):
 }
 
 ```
-````
