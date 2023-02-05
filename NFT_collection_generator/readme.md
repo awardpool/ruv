@@ -21,12 +21,13 @@ middle: a URL for the middle image used in the combination
 ## Conclusion:
 The Image Generator API provides a way to create unique combinations of images to build NFT & digital collectible collections. The API takes a series of images and generates new combinations based on user input, providing a dynamic and scalable solution for generating image collections. The API is built using Cloudflare workers in javascript and provides a JSON response with information about each image combination generated.
 
-##API POST Outline:
+## API POST Outline:
 Endpoint: https://api.example.com/images/generate
 Method: POST
 Request Body (JSON):
 
-(
+````
+```
 {
     "foregrounds": [
         "https://example.com/foreground1.png",
@@ -51,9 +52,12 @@ Request Body (JSON):
     "tiersize" : 20,
     "minCombinations": 52
 }
-)
-
+```
+````
 ### Response Body (JSON):
+
+````
+```
 (
 {
   "combinations": [
@@ -79,4 +83,5 @@ Request Body (JSON):
   }
 }
 
-)
+```
+````
