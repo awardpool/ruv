@@ -26,7 +26,7 @@ Endpoint: https://api.example.com/images/generate
 Method: POST
 Request Body (JSON):
 
-````
+
 ```
 {
     "foregrounds": [
@@ -53,7 +53,7 @@ Request Body (JSON):
     "minCombinations": 52
 }
 ```
-````
+
 ### Response Body (JSON):
 
 ````
